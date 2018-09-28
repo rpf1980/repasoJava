@@ -23,6 +23,7 @@ public class Main
         System.out.println("[9] Números del 1 al 100 con bucle While");
         System.out.println("[10] Números del 1 al 100 con bucle For");
         System.out.println("[11] Números divisibles por 2 y 3 del 1 al 100 con bucle While");
+        System.out.println("[12] Número de ventas");
         System.out.println();
         System.out.print("Elige una opción: ");
         int opcion = sc.nextInt();
@@ -209,6 +210,30 @@ public class Main
                         }
                         i++;
                     }
+                }
+                break;
+
+            case 12:
+                {
+                    //Realiza una aplicación que nos pida un número de ventas a introducir,
+                    //después nos pedirá tantas ventas por teclado como número de ventas se hayan indicado.
+                    //Al final mostrara la suma de todas las ventas. Piensa que es lo que se repite y lo que no.
+
+                    int tope;
+                    int suma = 0;
+                    int venta = 0;
+                    int i;
+
+                    System.out.println("Escribe número de ventas: ");
+                    tope = sc.nextInt();
+
+                    for(i = 0; i < tope; i++)
+                    {
+                        System.out.println("Escribe venta: ");
+                        venta = sc.nextInt();
+                        suma = suma + venta;
+                    }
+                    System.out.println("La suma de las ventas es = " + suma);
                 }
                 break;
         }

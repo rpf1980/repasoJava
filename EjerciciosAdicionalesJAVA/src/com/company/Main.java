@@ -1,5 +1,7 @@
 package com.company;
 
+import java.sql.SQLOutput;
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class Main
@@ -24,6 +26,9 @@ public class Main
         System.out.println("[10] Números del 1 al 100 con bucle For");
         System.out.println("[11] Números divisibles por 2 y 3 del 1 al 100 con bucle While");
         System.out.println("[12] Número de ventas");
+        System.out.println("[13] Calcula volumen de un cono");
+        System.out.println("[14] Conversor Mb a Kb");
+        System.out.println("[15] Conversor Mb a Gb");
         System.out.println();
         System.out.print("Elige una opción: ");
         int opcion = sc.nextInt();
@@ -234,6 +239,122 @@ public class Main
                         suma = suma + venta;
                     }
                     System.out.println("La suma de las ventas es = " + suma);
+                }
+                break;
+
+            case 13:
+                {
+                    //Escribe un programa que calcule el area de un cono.
+                    // Fórmula superficie lateral:   Al = π * r * h
+                    // Fórmula superfice del cono:   At = π * r * (h + r)
+
+                    final double pi = 3.1415926;
+                    double radio;
+                    double altura;
+                    double area;
+
+                    //Leemos datos
+                    System.out.print("Escribe el radio: ");
+                    radio = sc.nextDouble();
+                    System.out.print("Escribe la altura: ");
+                    altura = sc.nextInt();
+
+                    area = pi * radio * altura;
+
+                    System.out.println("Superficie lateral = " + area);
+
+                    area = pi * radio * (altura + radio);
+
+                    System.out.println("Superfice del cono = " + area);
+
+                }
+                break;
+
+            case 14:
+                {
+                    //1 bit = 1 posición binaria (valor 0/1)
+                    //1 bytes = 8 bits
+                    //1.024 bytes = 1 kilobyte (abreviado KB)
+                    //
+                    //1.024 KB = 1 Megabyte (abreviado MB. Aunque, para simplificar, muchas veces se explica como “aproximadamente 1.000 KB y, popularmente, conocido como “mega”)
+                    //
+                    //1.024 MB = 1 Gigabyte (GB, giga)
+                    //1.024 GB = 1 Terabyte (TB, tera)
+                    //1.024 TB = 1 Petabyte (PB, peta)
+                    //1.014 PB = 1 Exabyte (EB)
+                    //1.014 EB = 1 Zettabyte (ZB)
+                    //1.014 ZB = 1 Yottabyte (YB)
+                    //
+                    //... via Definicion ABC https://www.definicionabc.com/tecnologia/byte-kb-mb-gb-tb.php
+
+                    System.out.println("=================");
+                    System.out.println("Conversor Mb a Kb");
+                    System.out.println("=================");
+                    System.out.println();
+
+                    int mb, kb;
+
+                    System.out.println("Escribe los Mb: ");
+                    mb = sc.nextInt();
+
+                    kb = mb * 1024;
+
+                    System.out.println(mb + " MB = " + kb + " KB");
+                }
+                break;
+
+            case 15:
+                {
+                    int mb, gb;
+
+                    System.out.println("=================");
+                    System.out.println("Conversor Mb a Gb");
+                    System.out.println("=================");
+                    System.out.println();
+
+                    System.out.print("Escribe los MB: ");
+                    mb = sc.nextInt();
+
+                    gb = mb / 1024;
+
+                    System.out.println(mb + " MB = " + gb + " GB");
+                }
+                break;
+
+            case 16:
+                {
+                    //Realiza un programa que calcule la nota que hace falta sacar en el segundo
+                    //examen de la asignatura **Programación** para obtener la media deseada.
+                    //Hay que tener en cuenta que la nota del primer examen cuenta el 40% y la
+                    //del segundo examen un 60%.
+
+                    // Ejemplo 1:
+                    //Introduce la nota del primer examen: 7
+                    //¿Qué nota quieres sacar en el trimestre? 8.5
+                    //Para tener un 8.5 en el trimestre necesitas sacar un 9.5 en el segundo examen.
+
+                    //Ejemplo 2:
+                    //Introduce la nota del primer examen: 8
+                    //¿Qué nota quieres sacar en el trimestre? 7
+                    //Para tener un 7 en el trimestre necesitas sacar un 6.33 en el segundo examen.
+
+                    double nota1, nota2;
+                    double notaFinal;
+                    DecimalFormat df = new DecimalFormat("#.00");
+
+                    System.out.print("Escribe primera nota: ");
+                    nota1 = sc.nextDouble();
+                    System.out.println("¿Qué nota quieres sacar en el trimestre?");
+                    notaFinal = sc.nextDouble();
+
+                    //La nota final la calculamos de esta forma
+                    // notaFinal = ((nota1 * 40) + (nota2 * 60)) / 100;
+
+                    //Por tanto, despejando nota2 tenemos:
+                    nota2 = ((notaFinal * 100) - (nota1 * 40)) / 60;
+
+                    System.out.println("Para tener una nota final en el trimestre de " + notaFinal + " necesitas sacar un " + df.format(nota2));
+
                 }
                 break;
         }

@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Main
 {
-
+        //https://github.com/LuisJoseSanchez/aprende-java-con-ejerciciosjava
     public static void main(String[] args)
     {
         Scanner sc = new Scanner(System.in);
@@ -29,7 +29,8 @@ public class Main
         System.out.println("[13] Calcula volumen de un cono");
         System.out.println("[14] Conversor Mb a Kb");
         System.out.println("[15] Conversor Mb a Gb");
-        System.out.println();
+        System.out.println("[16] Nota primer examen 40% || Nota fianal");
+        System.out.println("[17] ¿Qué asignatura toca a primera hora?");
         System.out.print("Elige una opción: ");
         int opcion = sc.nextInt();
 
@@ -354,6 +355,37 @@ public class Main
                     nota2 = ((notaFinal * 100) - (nota1 * 40)) / 60;
 
                     System.out.println("Para tener una nota final en el trimestre de " + notaFinal + " necesitas sacar un " + df.format(nota2));
+
+                }
+                break;
+
+            case 17:
+                {
+                    //Escribe un programa que pida por teclado un día de la semana
+                    //y que diga qué asignatura toca a primera hora ese día.
+
+                    String dia;
+
+                    //Pedimos el día
+                    System.out.println("Escribe día: ");
+                    dia = sc.next();
+
+                    switch (dia)
+                    {
+                        case "Lunes":
+                            System.out.println("Álgebra");break;
+                        case "Martes":
+                            System.out.println("Historia");break;
+                        case "Miércoles":
+                            System.out.println("Inglés");break;
+                        case "Jueves":
+                            System.out.println("Lengua");break;
+                        case "Viernes":
+                            System.out.println("Informática");break;
+                            default:;break;
+
+                    }
+
 
                 }
                 break;

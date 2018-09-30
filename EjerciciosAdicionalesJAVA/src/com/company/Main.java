@@ -1,5 +1,6 @@
 package com.company;
 
+import java.beans.beancontext.BeanContextServiceRevokedEvent;
 import java.sql.SQLOutput;
 import java.text.DecimalFormat;
 import java.util.Scanner;
@@ -35,7 +36,17 @@ public class Main
         System.out.println("[19] Elige vértices de una pirámide o elige rombo");
         System.out.println("[20] Última cifra de un número entero");
         System.out.println("[21] Primera cifra de un número entero");
-        System.out.println("[22] ¿Cuántos minutos faltan para el fin de semana?");
+        System.out.println("[22] ¿Cuántos minutos faltan para el fin de semana?"); //** Muestra resultado erróneo
+        System.out.println("[23] Múltiplos de 5 de 0 a 100 (usa for)");
+        System.out.println("[24] Múltiplos de 5 de 0 a 100 (usa while)");
+        System.out.println("[25] Múltiplos de 5 de 0 a 100 (usa do-while)");
+        System.out.println("[26] Decreciente de 20 en 20 (bucle for)");
+        System.out.println("[27] Decreciente de 20 en 20 (bucle while)");
+        System.out.println("[28] Decreciente de 20 en 20 (bucle do-while)");
+        System.out.println("[29] Combinación CAJA FUERTE");
+        System.out.println("[30] Tabla de multiplicar");
+        System.out.println("[31] Calcula la media de N enteros, paramos con entero negativo");
+        System.out.println("[32] ¿Es número primo?");
         System.out.print("Elige una opción: ");
         int opcion = sc.nextInt();
 
@@ -620,8 +631,306 @@ public class Main
                     //semana. Se considerará que el fin de semana comienza el viernes a las 15:00h.
                     //Se da por hecho que el usuario introducirá un día y hora correctos,
                     //anterior al viernes a las 15:00h.
+
+                   /* String dia;
+                    int diaNumerico = 0;
+                    int hora, minuto;
+                    int minutosTotales;
+                    int resultado;
+
+                    //Pedimos dia
+                    System.out.print("Escribe día: ");
+                    dia = sc.next();
+
+                    switch (dia)
+                    {
+                        case "Lunes": diaNumerico = 4; break;
+                        case "Martes": diaNumerico = 3; break;
+                        case "Miércoles": diaNumerico = 2; break;
+                        case "Jueves": diaNumerico = 1; break;
+                        case "Viernes": diaNumerico = 0; break;
+                        default:
+                            System.out.println("El día introducido no es correcto");
+                            break;
+                    }
+
+                    //Pedimos hora
+                    System.out.print("Escribe hora: ");
+                    hora = sc.nextInt();
+
+                    //Pedimos minutos
+                    System.out.print("Escribe minutos: ");
+                    minuto = sc.nextInt();
+
+                    if(hora > 0)
+                    {
+                        if(minuto > 0)
+                        {
+                            resultado = (diaNumerico * 24 * 60) - (hora * 60) - minuto;
+                        }
+                        else
+                        {
+                            resultado = (diaNumerico * 24 * 60) - (hora * 60);
+                        }
+
+                    }
+                    else
+                    {
+                        resultado = (diaNumerico * 24 * 60) + (15 * 60);
+                    }
+
+                    //Mostramos resultado
+                    System.out.println("Faltan " + (resultado) + " minutos para el fin de semana");*/
+
+
+                     String dia;
+                     int diaNumerico = 0;
+                     int hora, minuto;
+                     int minutosTotales;
+                     int minutosActuales;
+                     int resultado;
+
+                     //Pedimos datos
+                     System.out.println("Escribe el día (horas y minutos) para mostrarte cuántos minutos quedan para el fin de semana");
+                     System.out.print("Dia: ");
+                     dia = sc.next();
+                     System.out.print("Hora: ");
+                     hora = sc.nextInt();
+                     System.out.print("Minuto: ");
+                     minuto = sc.nextInt();
+
+
+                     switch (dia)
+                    {
+                        case "Lunes": diaNumerico = 4; break;
+                        case "Martes": diaNumerico = 3; break;
+                        case "Miércoles": diaNumerico = 2; break;
+                        case "Jueves": diaNumerico = 1; break;
+                        case "Viernes": diaNumerico = 0; break;
+                        default:
+                            System.out.println("El día introducido no es correcto");
+                            break;
+                    }
+
+                    //Calculamos los minutos de los días totales y los minutos desde el punto actual
+                    minutosTotales = (4 * 24 * 60) + (15 * 60);
+                    minutosActuales = (diaNumerico * 24 * 60) + (hora * 60) + minuto;
+
+                    //Mostramos el resultado considerando desde el día, hora, minuto desde el que se pida
+                    resultado = (minutosTotales - minutosActuales);
+                    System.out.println("Faltan " + resultado + " para que llegue el fin de semana");
+
+
+
+
                 }
                 break;
+
+            case 23:
+                {
+                    //Muestra los números múltiplos de 5 de 0 a 100 utilizando un bucle for.
+
+                    int i;
+                    for(i = 1; i < 100; i++)
+                    {
+                        if(i %5 == 0)
+                        {
+                            System.out.println(i);
+                        }
+                    }
+                }
+                break;
+
+            case 24:
+            {
+                //Muestra los números múltiplos de 5 de 0 a 100 utilizando un bucle while.
+
+                int i = 1;
+                while(i < 100)
+                {
+                    if(i %5 == 0)
+                    {
+                        System.out.println(i);
+                    }
+                    i++;
+                }
+            }
+            break;
+
+            case 25:
+            {
+                //Muestra los números múltiplos de 5 de 0 a 100 utilizando un bucle do while.
+
+                int i;
+
+                i = 5;
+                do{
+                    System.out.println(i);
+                    i = i + 5;
+
+                }while(i < 100);
+
+            }
+            break;
+
+            case 26:
+            {
+                //Muestra los números del 320 al 160, contando de 20 en 20 hacia
+                //atrás utilizando un bucle for.
+
+                for(int i = 320; i >= 160; i = i - 20)
+                {
+                    System.out.println(i);
+                }
+            }
+            break;
+
+            case 27:
+            {
+                int i = 320;
+                while(i >= 160)
+                {
+                    System.out.println(i);
+                    i = i - 20;
+                }
+            }
+            break;
+
+            case 28:
+            {
+                //Muestra los números del 320 al 160, contando de 20 en 20
+                //utilizando un bucle do-while.
+
+                int i = 320;
+                do{
+                    System.out.println(i);
+                    i = i - 20;
+                }while(i >= 160);
+            }
+            break;
+
+            case 29:
+            {
+                //Realiza el control de acceso a una caja fuerte. La combinación
+                //será un número de 4 cifras. El programa nos pedirá la combinación
+                //para abrirla. Si no acertamos, se nos mostrará el mensaje
+                //“Lo siento, esa no es la combinación” y si acertamos se nos dirá
+                //“La caja fuerte se ha abierto satisfactoriamente”. Tendremos cuatro
+                //oportunidades para abrir la caja fuerte.
+
+                int combinacion = 4444;
+                int intentos;
+                boolean acertado = false;
+                int n, i;
+                System.out.println("Escriba la combinación de la caja: ");
+                n = sc.nextInt();
+                intentos = 1;
+
+                //Pedimos la combinación
+                if(n == combinacion)
+                {
+                    acertado = true;
+                }
+                else
+                {
+                    i = 1;
+                    while(i < 4)
+                    {
+                        intentos++;
+                        System.out.println("Combinación incorrecta");
+                        System.out.println("Escriba la combinación de la caja: ");
+                        n = sc.nextInt();
+                        i++;
+                    }
+                }
+
+                if(acertado)
+                {
+                    System.out.println("La caja fuerte se ha abierto satisfactoriamente");
+                    System.out.println("Números de intentos = " + intentos);
+                }
+                else
+                {
+                    System.out.println("Los siento, esa no es la combinación" + '\n' + "Agotó los 4 intentos");
+                    System.out.println("CAJA FUERTE BLOQUEADA" + '\n' + "¡Llame al servicio técnico!");
+                }
+
+            }
+            break;
+
+            case 30:
+            {
+                int i;
+                int n;
+                System.out.println("Escribe un número para mostrarte su tabla de multiplicar: ");
+                n = sc.nextInt();
+
+                for(i = 1; i <= 10; i++)
+                {
+                    System.out.println(n + " x " + i + " = " + (n * i));
+                }
+            }
+            break;
+
+            case 31:
+            {
+                //Escribe un programa que calcule la media de un conjunto de números
+                //positivos introducidos por teclado. A priori, el programa no sabe
+                //cuántos números se introducirán. El usuario indicará que ha terminado
+                //de introducir los datos cuando meta un número negativo.
+
+                int n;
+                int contador = 0;
+                int suma = 0;
+
+                System.out.print("Escribe un número: ");
+                n = sc.nextInt();
+
+                while(n >= 0)
+                {
+                    contador++;
+                    suma = suma + n;
+                    System.out.print("Escribe un número: ");
+                    n = sc.nextInt();
+                }
+
+                System.out.println("Suma = " + suma);
+                System.out.println("Media = " + (suma / contador));
+
+            }
+            break;
+
+            case 32:
+            {
+                //Escribe un programa que diga si un número introducido por teclado
+                //es o no primo. Un número primo es aquel que sólo es divisible entre
+                //él mismo y la unidad.
+
+                int n, i;
+                int divisores = 0;
+
+                System.out.println("Escribe el número: ");
+                n = sc.nextInt();
+
+                i = 1;
+                while(i <= n)
+                {
+                    if(n %i == 0)
+                    {
+                        divisores++;
+                    }
+                    i++;
+                }
+                if(divisores > 2)
+                {
+                    System.out.println("NO ES PRIMO");
+                }
+                else
+                {
+                    System.out.println("ES PRIMO");
+                }
+            }
+            break;
         }
 
     }

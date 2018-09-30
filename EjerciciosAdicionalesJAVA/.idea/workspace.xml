@@ -40,23 +40,25 @@
     <session id="1963215946">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
-          <entry key="project.open.time.0" value="1" />
+          <entry key="project.closed" value="6" />
+          <entry key="project.open.time.0" value="2" />
+          <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="2" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="6144" />
-          <entry key="txt" value="98" />
+          <entry key="java" value="15507" />
+          <entry key="txt" value="112" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="6144" />
-          <entry key="PLAIN_TEXT" value="98" />
+          <entry key="JAVA" value="15507" />
+          <entry key="PLAIN_TEXT" value="112" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -69,8 +71,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="623" column="22" lean-forward="true" selection-start-line="623" selection-start-column="22" selection-end-line="623" selection-end-column="22" />
+            <state relative-caret-position="330">
+              <caret line="929" column="48" selection-start-line="929" selection-start-column="48" selection-end-line="929" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -96,9 +98,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="949" />
-    <option name="width" value="980" />
-    <option name="height" value="1091" />
+    <option name="x" value="-12" />
+    <option name="width" value="981" />
+    <option name="height" value="1092" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -108,7 +110,7 @@
     <panes />
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538250360846" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538321783004" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
@@ -172,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1538226588809</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Subiendo ejercicio 18, 19, 20, 21">
+      <created>1538250450989</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1538250450989</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -188,7 +197,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32890365" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33222592" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -214,13 +223,14 @@
     <MESSAGE value="Realizo ejercicio 12" />
     <MESSAGE value="Subiendo al servidor ejercicio 13,14,15 y 16." />
     <MESSAGE value="Subiendo ejercicio 17" />
-    <option name="LAST_COMMIT_MESSAGE" value="Subiendo ejercicio 17" />
+    <MESSAGE value="Subiendo ejercicio 18, 19, 20, 21" />
+    <option name="LAST_COMMIT_MESSAGE" value="Subiendo ejercicio 18, 19, 20, 21" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="623" column="22" lean-forward="true" selection-start-line="623" selection-start-column="22" selection-end-line="623" selection-end-column="22" />
+        <state relative-caret-position="330">
+          <caret line="929" column="48" selection-start-line="929" selection-start-column="48" selection-end-line="929" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -47,6 +47,7 @@ public class Main
         System.out.println("[30] Tabla de multiplicar");
         System.out.println("[31] Calcula la media de N enteros, paramos con entero negativo");
         System.out.println("[32] ¿Es número primo?");
+        System.out.println("[3000]");
         System.out.print("Elige una opción: ");
         int opcion = sc.nextInt();
 

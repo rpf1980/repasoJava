@@ -626,63 +626,7 @@ public class Main
 
             case 22:
                 {
-                    //Realiza un programa que, dado un día de la semana (de lunes a viernes) y
-                    //una hora (horas y minutos), calcule cuántos minutos faltan para el fin de
-                    //semana. Se considerará que el fin de semana comienza el viernes a las 15:00h.
-                    //Se da por hecho que el usuario introducirá un día y hora correctos,
-                    //anterior al viernes a las 15:00h.
-
-                   /* String dia;
-                    int diaNumerico = 0;
-                    int hora, minuto;
-                    int minutosTotales;
-                    int resultado;
-
-                    //Pedimos dia
-                    System.out.print("Escribe día: ");
-                    dia = sc.next();
-
-                    switch (dia)
-                    {
-                        case "Lunes": diaNumerico = 4; break;
-                        case "Martes": diaNumerico = 3; break;
-                        case "Miércoles": diaNumerico = 2; break;
-                        case "Jueves": diaNumerico = 1; break;
-                        case "Viernes": diaNumerico = 0; break;
-                        default:
-                            System.out.println("El día introducido no es correcto");
-                            break;
-                    }
-
-                    //Pedimos hora
-                    System.out.print("Escribe hora: ");
-                    hora = sc.nextInt();
-
-                    //Pedimos minutos
-                    System.out.print("Escribe minutos: ");
-                    minuto = sc.nextInt();
-
-                    if(hora > 0)
-                    {
-                        if(minuto > 0)
-                        {
-                            resultado = (diaNumerico * 24 * 60) - (hora * 60) - minuto;
-                        }
-                        else
-                        {
-                            resultado = (diaNumerico * 24 * 60) - (hora * 60);
-                        }
-
-                    }
-                    else
-                    {
-                        resultado = (diaNumerico * 24 * 60) + (15 * 60);
-                    }
-
-                    //Mostramos resultado
-                    System.out.println("Faltan " + (resultado) + " minutos para el fin de semana");*/
-
-
+                    
                      String dia;
                      int diaNumerico = 0;
                      int hora, minuto;
@@ -702,11 +646,11 @@ public class Main
 
                      switch (dia)
                     {
-                        case "Lunes": diaNumerico = 4; break;
-                        case "Martes": diaNumerico = 3; break;
+                        case "Lunes": diaNumerico = 0; break;
+                        case "Martes": diaNumerico = 1; break;
                         case "Miércoles": diaNumerico = 2; break;
-                        case "Jueves": diaNumerico = 1; break;
-                        case "Viernes": diaNumerico = 0; break;
+                        case "Jueves": diaNumerico = 3; break;
+                        case "Viernes": diaNumerico = 4; break;
                         default:
                             System.out.println("El día introducido no es correcto");
                             break;
@@ -718,7 +662,7 @@ public class Main
 
                     //Mostramos el resultado considerando desde el día, hora, minuto desde el que se pida
                     resultado = (minutosTotales - minutosActuales);
-                    System.out.println("Faltan " + resultado + " para que llegue el fin de semana");
+                    System.out.println("Faltan " + resultado + " minutos para que llegue el fin de semana");
 
 
 

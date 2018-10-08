@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7ff0ba4-4783-4520-90ab-36b286db81f9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/EjerciciosAdicionalesJAVA/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EjerciciosAdicionalesJAVA/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -88,19 +90,20 @@
         <counts>
           <entry key="project.closed" value="1" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="19" />
-          <entry key="txt" value="22" />
+          <entry key="java" value="538" />
+          <entry key="txt" value="119" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="19" />
-          <entry key="PLAIN_TEXT" value="22" />
+          <entry key="JAVA" value="538" />
+          <entry key="PLAIN_TEXT" value="119" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open" />
@@ -113,8 +116,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-85">
-              <caret line="628" column="20" selection-start-line="628" selection-start-column="20" selection-end-line="628" selection-end-column="20" />
+            <state relative-caret-position="393">
+              <caret line="928" column="46" selection-start-line="928" selection-start-column="46" selection-end-line="928" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -140,10 +143,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="540" />
-    <option name="y" value="375" />
-    <option name="width" value="981" />
-    <option name="height" value="1092" />
+    <option name="x" value="949" />
+    <option name="width" value="980" />
+    <option name="height" value="1091" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -245,11 +247,25 @@
       <option name="project" value="LOCAL" />
       <updated>1538841899159</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Comentario de ejercico 22 en menu eliminado">
+      <created>1539018056412</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1539018056412</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Subiendo ejercicio 33 y 34 de pack repasoJava">
+      <created>1539026125843</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1539026125843</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
+    <frame x="633" y="0" width="653" height="727" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.24939272" />
@@ -291,13 +307,15 @@
     <MESSAGE value="Subiendo ejercicios: del 22 al 32" />
     <MESSAGE value="Prueba de commit...añado una opcion nula al menú" />
     <MESSAGE value="Ejercico 22 modificado" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ejercico 22 modificado" />
+    <MESSAGE value="Comentario de ejercico 22 en menu eliminado" />
+    <MESSAGE value="Subiendo ejercicio 33 y 34 de pack repasoJava" />
+    <option name="LAST_COMMIT_MESSAGE" value="Subiendo ejercicio 33 y 34 de pack repasoJava" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-85">
-          <caret line="628" column="20" selection-start-line="628" selection-start-column="20" selection-end-line="628" selection-end-column="20" />
+        <state relative-caret-position="393">
+          <caret line="928" column="46" selection-start-line="928" selection-start-column="46" selection-end-line="928" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

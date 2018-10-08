@@ -49,6 +49,7 @@ public class Main
         System.out.println("[32] ¿Es número primo?");
         System.out.println("[33] 20 en 20 descendente con while");
         System.out.println("[34] 20 en 20 descendente con do-while");
+        System.out.println("[35] ¿Cuántos dígitos tiene un número?");
         System.out.print("Elige una opción: ");
         int opcion = sc.nextInt();
 
@@ -906,6 +907,26 @@ public class Main
                     i = i - 20;
 
                 }while(i >= 160);
+            }
+            break;
+
+            case 35:
+            {
+                //Realiza un programa que nos diga cuántos dígitos tiene un número introducido por teclado.
+
+                int i, numeroIntroducido;
+                int numeroDigitos = 1;
+                System.out.print("Escribe un número: ");
+                numeroIntroducido = sc.nextInt();
+                System.out.print(numeroIntroducido + " = ");
+
+                i = numeroIntroducido;
+                while(i > 10)
+                {
+                    i /= 10;
+                    numeroDigitos++;
+                }
+                System.out.print(numeroDigitos);
             }
             break;
         }

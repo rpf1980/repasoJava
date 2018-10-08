@@ -36,7 +36,7 @@ public class Main
         System.out.println("[19] Elige vértices de una pirámide o elige rombo");
         System.out.println("[20] Última cifra de un número entero");
         System.out.println("[21] Primera cifra de un número entero");
-        System.out.println("[22] ¿Cuántos minutos faltan para el fin de semana?"); //** Muestra resultado erróneo
+        System.out.println("[22] ¿Cuántos minutos faltan para el fin de semana?");
         System.out.println("[23] Múltiplos de 5 de 0 a 100 (usa for)");
         System.out.println("[24] Múltiplos de 5 de 0 a 100 (usa while)");
         System.out.println("[25] Múltiplos de 5 de 0 a 100 (usa do-while)");
@@ -626,7 +626,7 @@ public class Main
 
             case 22:
                 {
-                    
+
                      String dia;
                      int diaNumerico = 0;
                      int hora, minuto;

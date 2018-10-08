@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7ff0ba4-4783-4520-90ab-36b286db81f9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EjerciciosAdicionalesJAVA.iml" beforeDir="false" afterPath="$PROJECT_DIR$/EjerciciosAdicionalesJAVA.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EjerciciosAdicionalesJAVA/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EjerciciosAdicionalesJAVA/com/company/Main.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -90,20 +86,26 @@
     <session id="586411187">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="10" />
+          <entry key="java" value="19" />
+          <entry key="txt" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="10" />
+          <entry key="JAVA" value="19" />
+          <entry key="PLAIN_TEXT" value="22" />
         </counts>
       </usages-collector>
+      <usages-collector id="statistics.file.types.open" />
+      <usages-collector id="statistics.vcs.git.usages" />
+      <usages-collector id="statistics.file.extensions.open" />
     </session>
   </component>
   <component name="FileEditorManager">
@@ -111,8 +113,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-853">
-              <caret line="635" column="40" lean-forward="true" selection-start-line="635" selection-start-column="40" selection-end-line="635" selection-end-column="40" />
+            <state relative-caret-position="-85">
+              <caret line="628" column="20" selection-start-line="628" selection-start-column="20" selection-end-line="628" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -152,7 +154,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538321783004" />
-    <property name="last_opened_file_path" value="D:/DAW_1/DAW_soloJava/BuclesFor" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -236,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1538556787618</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Ejercico 22 modificado">
+      <created>1538841899159</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1538841899159</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -281,13 +290,14 @@
     <MESSAGE value="Subiendo ejercicio 18, 19, 20, 21" />
     <MESSAGE value="Subiendo ejercicios: del 22 al 32" />
     <MESSAGE value="Prueba de commit...añado una opcion nula al menú" />
-    <option name="LAST_COMMIT_MESSAGE" value="Prueba de commit...añado una opcion nula al menú" />
+    <MESSAGE value="Ejercico 22 modificado" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ejercico 22 modificado" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-853">
-          <caret line="635" column="40" lean-forward="true" selection-start-line="635" selection-start-column="40" selection-end-line="635" selection-end-column="40" />
+        <state relative-caret-position="-85">
+          <caret line="628" column="20" selection-start-line="628" selection-start-column="20" selection-end-line="628" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

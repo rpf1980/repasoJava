@@ -47,6 +47,8 @@ public class Main
         System.out.println("[30] Tabla de multiplicar");
         System.out.println("[31] Calcula la media de N enteros, paramos con entero negativo");
         System.out.println("[32] ¿Es número primo?");
+        System.out.println("[33] 20 en 20 descendente con while");
+        System.out.println("[34] 20 en 20 descendente con do-while");
         System.out.print("Elige una opción: ");
         int opcion = sc.nextInt();
 
@@ -873,6 +875,37 @@ public class Main
                 {
                     System.out.println("ES PRIMO");
                 }
+            }
+            break;
+
+            case 33:
+            {
+                //Muestra los números del 320 al 160, contando de 20 en 20 hacia
+                //atrás utilizando un bucle while.
+
+                int i;
+                i = 320;
+                while(i >= 160)
+                {
+                    System.out.println(i);
+                    i = i - 20;
+                }
+            }
+            break;
+
+            case 34:
+            {
+                //Muestra los números del 320 al 160, contando de 20 en 20
+                //utilizando un bucle do-while.
+
+                int i = 320;
+
+                do
+                {
+                    System.out.println(i);
+                    i = i - 20;
+
+                }while(i >= 160);
             }
             break;
         }

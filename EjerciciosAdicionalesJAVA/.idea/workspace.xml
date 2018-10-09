@@ -95,14 +95,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1023" />
-          <entry key="txt" value="127" />
+          <entry key="java" value="2755" />
+          <entry key="txt" value="134" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1023" />
-          <entry key="PLAIN_TEXT" value="127" />
+          <entry key="JAVA" value="2755" />
+          <entry key="PLAIN_TEXT" value="134" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open" />
@@ -115,8 +115,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="953" column="129" selection-start-line="953" selection-start-column="129" selection-end-line="953" selection-end-column="129" />
+            <state relative-caret-position="280">
+              <caret line="1074" column="36" selection-start-line="1074" selection-start-column="36" selection-end-line="1074" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -142,9 +142,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="948" />
-    <option name="width" value="981" />
-    <option name="height" value="1092" />
+    <option name="x" value="949" />
+    <option name="width" value="980" />
+    <option name="height" value="1091" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -267,11 +267,25 @@
       <option name="project" value="LOCAL" />
       <updated>1539026927413</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Subiendo ejercicio 36 de pack repasoJava">
+      <created>1539061188036</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1539061188036</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Subiendo ejercicio 36 y 38 de pack repasoJava">
+      <created>1539063129170</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1539063129170</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
+    <frame x="633" y="0" width="653" height="727" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.24939272" />
@@ -283,7 +297,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.33222592" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33164984" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -316,13 +330,15 @@
     <MESSAGE value="Comentario de ejercico 22 en menu eliminado" />
     <MESSAGE value="Subiendo ejercicio 33 y 34 de pack repasoJava" />
     <MESSAGE value="Subiendo ejercicio 35 de pack repasoJava" />
-    <option name="LAST_COMMIT_MESSAGE" value="Subiendo ejercicio 35 de pack repasoJava" />
+    <MESSAGE value="Subiendo ejercicio 36 de pack repasoJava" />
+    <MESSAGE value="Subiendo ejercicio 36 y 38 de pack repasoJava" />
+    <option name="LAST_COMMIT_MESSAGE" value="Subiendo ejercicio 36 y 38 de pack repasoJava" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="953" column="129" selection-start-line="953" selection-start-column="129" selection-end-line="953" selection-end-column="129" />
+        <state relative-caret-position="280">
+          <caret line="1074" column="36" selection-start-line="1074" selection-start-column="36" selection-end-line="1074" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

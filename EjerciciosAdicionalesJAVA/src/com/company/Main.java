@@ -53,6 +53,8 @@ public class Main
         System.out.println("[36] Media de N enteros, salimos con nº negativo");
         System.out.println("[37] 3 columnas: N | cuadrado | cubo");
         System.out.println("[38] Fibonacci");
+        System.out.println("[39] N positivos | N negativos");
+        System.out.println("[40] Calcula la potencia de un entero");
         System.out.print("Elige una opción: ");
         int opcion = sc.nextInt();
 
@@ -1022,6 +1024,58 @@ public class Main
                     break;
                 }
                 System.out.println();
+            }
+            break;
+
+            case 39:
+            {
+                //Escribe un programa que lea una lista de diez números y determine
+                //cuántos son positivos, y cuántos son negativos.
+
+                int i, n;
+                int positivos, negativos;
+                positivos = 0;
+                negativos = 0;
+
+                for(i = 0;i < 10; i++)
+                {
+                    System.out.print("Escribe un número: ");
+                    n = sc.nextInt();
+                    if(n >= 0)
+                    {
+                        positivos++;
+                    }
+                    else
+                    {
+                        negativos++;
+                    }
+                }
+                System.out.print(positivos + " números positivos" + "\n");
+                System.out.print(negativos + " números negativos");
+            }
+            break;
+
+            case 40:
+            {
+                //Escribe un programa que pida una base y un exponente (entero positivo)
+                //y que calcule la potencia.
+
+                int base, exponente;
+                int i;
+                int potencia = 1;
+
+                System.out.println("Escribe base: ");
+                base = sc.nextInt();
+                System.out.println("Escribe exponente: ");
+                exponente = sc.nextInt();
+
+
+                for(i = 0; i < exponente; i++)
+                {
+                    potencia *= base;
+                }
+                System.out.println(potencia);
+
             }
             break;
         }

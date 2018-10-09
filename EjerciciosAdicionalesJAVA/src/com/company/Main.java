@@ -50,6 +50,7 @@ public class Main
         System.out.println("[33] 20 en 20 descendente con while");
         System.out.println("[34] 20 en 20 descendente con do-while");
         System.out.println("[35] ¿Cuántos dígitos tiene un número?");
+        System.out.println("[36] Media de N enteros, salimos con nº negativo");
         System.out.print("Elige una opción: ");
         int opcion = sc.nextInt();
 
@@ -840,7 +841,6 @@ public class Main
                     System.out.print("Escribe un número: ");
                     n = sc.nextInt();
                 }
-
                 System.out.println("Suma = " + suma);
                 System.out.println("Media = " + (suma / contador));
 
@@ -927,6 +927,33 @@ public class Main
                     numeroDigitos++;
                 }
                 System.out.print(numeroDigitos);
+            }
+            break;
+
+            case 36:
+            {
+                //Escribe un programa que calcule la media de un conjunto de números
+                //positivos introducidos por teclado. A priori, el programa no sabe
+                //cuántos números se introducirán. El usuario indicará que ha terminado
+                //de introducir los datos cuando meta un número negativo.
+
+                int n = 0;
+                int suma, media, contador;
+                suma = 0;
+                contador = 0;
+
+                while(!(n < 0))
+                {
+                    suma = suma + n;
+                    System.out.print("Escribe un número: ");
+                    n = sc.nextInt();
+                    contador++;
+                }
+
+                System.out.println(suma);
+                media = suma / (contador-1);  //Restamos una unidad al contador porque ya tenía valor antes de entrar en el bucle
+                System.out.println("La media es = " + media);
+
             }
             break;
         }

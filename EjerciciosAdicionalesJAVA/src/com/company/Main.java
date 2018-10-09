@@ -55,6 +55,8 @@ public class Main
         System.out.println("[38] Fibonacci");
         System.out.println("[39] N positivos | N negativos");
         System.out.println("[40] Calcula la potencia de un entero");
+        System.out.println("[41] Suma n + 100, pero no puede ser negativo");
+        System.out.println("[42] Enteros entre A y B de 7 en 7");
         System.out.print("Elige una opción: ");
         int opcion = sc.nextInt();
 
@@ -633,74 +635,82 @@ public class Main
             break;
 
             case 22:
+            {
+
+                String dia;
+                int diaNumerico = 0;
+                int hora, minuto;
+                int minutosTotales;
+                int minutosActuales;
+                int resultado;
+
+                //Pedimos datos
+                System.out.println("Escribe el día (horas y minutos) para mostrarte cuántos minutos quedan para el fin de semana");
+                System.out.print("Dia: ");
+                dia = sc.next();
+                System.out.print("Hora: ");
+                hora = sc.nextInt();
+                System.out.print("Minuto: ");
+                minuto = sc.nextInt();
+
+
+                switch (dia)
                 {
-
-                     String dia;
-                     int diaNumerico = 0;
-                     int hora, minuto;
-                     int minutosTotales;
-                     int minutosActuales;
-                     int resultado;
-
-                     //Pedimos datos
-                     System.out.println("Escribe el día (horas y minutos) para mostrarte cuántos minutos quedan para el fin de semana");
-                     System.out.print("Dia: ");
-                     dia = sc.next();
-                     System.out.print("Hora: ");
-                     hora = sc.nextInt();
-                     System.out.print("Minuto: ");
-                     minuto = sc.nextInt();
-
-
-                     switch (dia)
-                    {
-                        case "Lunes": diaNumerico = 0; break;
-                        case "Martes": diaNumerico = 1; break;
-                        case "Miércoles": diaNumerico = 2; break;
-                        case "Jueves": diaNumerico = 3; break;
-                        case "Viernes": diaNumerico = 4; break;
-                        default:
-                            System.out.println("El día introducido no es correcto");
-                            break;
-                    }
-
-                    //Calculamos los minutos de los días totales y los minutos desde el punto actual
-                    minutosTotales = (4 * 24 * 60) + (15 * 60);
-                    minutosActuales = (diaNumerico * 24 * 60) + (hora * 60) + minuto;
-
-                    //Mostramos el resultado considerando desde el día, hora, minuto desde el que se pida
-                    resultado = (minutosTotales - minutosActuales);
-                    System.out.println("Faltan " + resultado + " minutos para que llegue el fin de semana");
-
-
-
-
+                    case "Lunes":
+                        diaNumerico = 0;
+                        break;
+                    case "Martes":
+                        diaNumerico = 1;
+                        break;
+                    case "Miércoles":
+                        diaNumerico = 2;
+                        break;
+                    case "Jueves":
+                        diaNumerico = 3;
+                        break;
+                    case "Viernes":
+                        diaNumerico = 4;
+                        break;
+                    default:
+                        System.out.println("El día introducido no es correcto");
+                        break;
                 }
-                break;
+
+                //Calculamos los minutos de los días totales y los minutos desde el punto actual
+                minutosTotales = (4 * 24 * 60) + (15 * 60);
+                minutosActuales = (diaNumerico * 24 * 60) + (hora * 60) + minuto;
+
+                //Mostramos el resultado considerando desde el día, hora, minuto desde el que se pida
+                resultado = (minutosTotales - minutosActuales);
+                System.out.println("Faltan " + resultado + " minutos para que llegue el fin de semana");
+
+
+            }
+            break;
 
             case 23:
-                {
-                    //Muestra los números múltiplos de 5 de 0 a 100 utilizando un bucle for.
+            {
+                //Muestra los números múltiplos de 5 de 0 a 100 utilizando un bucle for.
 
-                    int i;
-                    for(i = 1; i < 100; i++)
+                int i;
+                for (i = 1; i < 100; i++)
+                {
+                    if (i % 5 == 0)
                     {
-                        if(i %5 == 0)
-                        {
-                            System.out.println(i);
-                        }
+                        System.out.println(i);
                     }
                 }
-                break;
+            }
+            break;
 
             case 24:
             {
                 //Muestra los números múltiplos de 5 de 0 a 100 utilizando un bucle while.
 
                 int i = 1;
-                while(i < 100)
+                while (i < 100)
                 {
-                    if(i %5 == 0)
+                    if (i % 5 == 0)
                     {
                         System.out.println(i);
                     }
@@ -716,11 +726,12 @@ public class Main
                 int i;
 
                 i = 5;
-                do{
+                do
+                {
                     System.out.println(i);
                     i = i + 5;
 
-                }while(i < 100);
+                } while (i < 100);
 
             }
             break;
@@ -730,7 +741,7 @@ public class Main
                 //Muestra los números del 320 al 160, contando de 20 en 20 hacia
                 //atrás utilizando un bucle for.
 
-                for(int i = 320; i >= 160; i = i - 20)
+                for (int i = 320; i >= 160; i = i - 20)
                 {
                     System.out.println(i);
                 }
@@ -740,7 +751,7 @@ public class Main
             case 27:
             {
                 int i = 320;
-                while(i >= 160)
+                while (i >= 160)
                 {
                     System.out.println(i);
                     i = i - 20;
@@ -754,10 +765,11 @@ public class Main
                 //utilizando un bucle do-while.
 
                 int i = 320;
-                do{
+                do
+                {
                     System.out.println(i);
                     i = i - 20;
-                }while(i >= 160);
+                } while (i >= 160);
             }
             break;
 
@@ -779,14 +791,13 @@ public class Main
                 intentos = 1;
 
                 //Pedimos la combinación
-                if(n == combinacion)
+                if (n == combinacion)
                 {
                     acertado = true;
-                }
-                else
+                } else
                 {
                     i = 1;
-                    while(i < 4)
+                    while (i < 4)
                     {
                         intentos++;
                         System.out.println("Combinación incorrecta");
@@ -796,12 +807,11 @@ public class Main
                     }
                 }
 
-                if(acertado)
+                if (acertado)
                 {
                     System.out.println("La caja fuerte se ha abierto satisfactoriamente");
                     System.out.println("Números de intentos = " + intentos);
-                }
-                else
+                } else
                 {
                     System.out.println("Los siento, esa no es la combinación" + '\n' + "Agotó los 4 intentos");
                     System.out.println("CAJA FUERTE BLOQUEADA" + '\n' + "¡Llame al servicio técnico!");
@@ -817,7 +827,7 @@ public class Main
                 System.out.println("Escribe un número para mostrarte su tabla de multiplicar: ");
                 n = sc.nextInt();
 
-                for(i = 1; i <= 10; i++)
+                for (i = 1; i <= 10; i++)
                 {
                     System.out.println(n + " x " + i + " = " + (n * i));
                 }
@@ -838,7 +848,7 @@ public class Main
                 System.out.print("Escribe un número: ");
                 n = sc.nextInt();
 
-                while(n >= 0)
+                while (n >= 0)
                 {
                     contador++;
                     suma = suma + n;
@@ -864,19 +874,18 @@ public class Main
                 n = sc.nextInt();
 
                 i = 1;
-                while(i <= n)
+                while (i <= n)
                 {
-                    if(n %i == 0)
+                    if (n % i == 0)
                     {
                         divisores++;
                     }
                     i++;
                 }
-                if(divisores > 2)
+                if (divisores > 2)
                 {
                     System.out.println("NO ES PRIMO");
-                }
-                else
+                } else
                 {
                     System.out.println("ES PRIMO");
                 }
@@ -890,7 +899,7 @@ public class Main
 
                 int i;
                 i = 320;
-                while(i >= 160)
+                while (i >= 160)
                 {
                     System.out.println(i);
                     i = i - 20;
@@ -910,7 +919,7 @@ public class Main
                     System.out.println(i);
                     i = i - 20;
 
-                }while(i >= 160);
+                } while (i >= 160);
             }
             break;
 
@@ -925,7 +934,7 @@ public class Main
                 System.out.print(numeroIntroducido + " = ");
 
                 i = numeroIntroducido;
-                while(i > 10)
+                while (i > 10)
                 {
                     i /= 10;
                     numeroDigitos++;
@@ -946,7 +955,7 @@ public class Main
                 suma = 0;
                 contador = 0;
 
-                while(!(n < 0))
+                while (!(n < 0))
                 {
                     suma = suma + n;
                     System.out.print("Escribe un número: ");
@@ -955,7 +964,7 @@ public class Main
                 }
 
                 System.out.println(suma);
-                media = suma / (contador-1);  //Restamos una unidad al contador porque ya tenía valor antes de entrar en el bucle
+                media = suma / (contador - 1);  //Restamos una unidad al contador porque ya tenía valor antes de entrar en el bucle
                 System.out.println("La media es = " + media);
 
             }
@@ -971,7 +980,7 @@ public class Main
                 System.out.println("Escribe un número: ");
                 n = sc.nextInt();
 
-                for(int i = n; i < n + 5; i++)
+                for (int i = n; i < n + 5; i++)
                 {
                     System.out.printf("%4d %6d %8d\n", i, i * i, i * i * i);
                 }
@@ -1012,7 +1021,7 @@ public class Main
                         int f2 = 1;
                         int aux;
 
-                        while(n > 2)
+                        while (n > 2)
                         {
                             aux = f1;
                             f1 = f2;
@@ -1037,15 +1046,14 @@ public class Main
                 positivos = 0;
                 negativos = 0;
 
-                for(i = 0;i < 10; i++)
+                for (i = 0; i < 10; i++)
                 {
                     System.out.print("Escribe un número: ");
                     n = sc.nextInt();
-                    if(n >= 0)
+                    if (n >= 0)
                     {
                         positivos++;
-                    }
-                    else
+                    } else
                     {
                         negativos++;
                     }
@@ -1070,7 +1078,7 @@ public class Main
                 exponente = sc.nextInt();
 
 
-                for(i = 0; i < exponente; i++)
+                for (i = 0; i < exponente; i++)
                 {
                     potencia *= base;
                 }
@@ -1078,8 +1086,76 @@ public class Main
 
             }
             break;
-        }
 
+            case 41:
+            {
+                //Realiza un programa que sume los 100 números  siguientes a un número entero y positivo
+                //introducido por teclado. Se debe comprobar que el dato introducido es correcto (que es
+                //un número positivo).
+
+                int n, i;
+                int suma = 0;
+                System.out.print("Escribe un número: ");
+                n = sc.nextInt();
+
+
+                while (n < 0)
+                {
+                    System.out.println("El número no puede ser negativo");
+                    System.out.print("Escribe un número: ");
+                    n = sc.nextInt();
+                }
+
+                for (i = n; i < n + 100; i++)
+                {
+                    suma = suma + i;
+                }
+                System.out.println(suma);
+
+
+            }
+            break;
+
+            case 42:
+            {
+                //Escribe un programa que obtenga los números enteros comprendidos entre dos números
+                //introducidos por teclado y validados como distintos, el programa debe empezar por
+                //el menor de los enteros introducidos e ir incrementando de 7 en 7.
+
+                int a, b, i;
+                System.out.print("Escribe primer número: ");
+                a = sc.nextInt();
+                System.out.print("Escribe segundo número: ");
+                b = sc.nextInt();
+
+                if (a < b)
+                {
+                    for (i = a; i <= b; i = i + 7)
+                    {
+                        System.out.println(i);
+                    }
+                } else
+                {
+                    for (i = b; i <= a; i = i + 7)
+                    {
+                        System.out.println(i);
+                    }
+                }
+
+            }
+            break;
+
+            case 43:
+            {
+                //Realiza un programa que pinte una pirámide por pantalla. La altura
+                //se debe pedir por teclado. El carácter con el que se pinta la pirámide
+                //también se debe pedir por teclado.
+
+                int alturaPiramide;
+                String caracter = "";
+            }
+            break;
+
+        }
     }
 }
-

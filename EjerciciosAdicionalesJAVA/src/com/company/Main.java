@@ -51,6 +51,8 @@ public class Main
         System.out.println("[34] 20 en 20 descendente con do-while");
         System.out.println("[35] ¿Cuántos dígitos tiene un número?");
         System.out.println("[36] Media de N enteros, salimos con nº negativo");
+        System.out.println("[37] 3 columnas: N | cuadrado | cubo");
+        System.out.println("[38] Fibonacci");
         System.out.print("Elige una opción: ");
         int opcion = sc.nextInt();
 
@@ -954,6 +956,72 @@ public class Main
                 media = suma / (contador-1);  //Restamos una unidad al contador porque ya tenía valor antes de entrar en el bucle
                 System.out.println("La media es = " + media);
 
+            }
+            break;
+
+            case 37:
+            {
+                //Escribe un programa que muestre en tres columnas, el cuadrado y
+                //el cubo de los 5 primeros números enteros a partir de uno que se
+                //introduce por teclado.
+
+                int n;
+                System.out.println("Escribe un número: ");
+                n = sc.nextInt();
+
+                for(int i = n; i < n + 5; i++)
+                {
+                    System.out.printf("%4d %6d %8d\n", i, i * i, i * i * i);
+                }
+            }
+            break;
+
+            case 38:
+            {
+                //Escribe un programa que muestre los n primeros términos de la
+                //serie de Fibonacci. El primer término de la serie de Fibonacci
+                //es 0, el segundo es 1 y el resto se calcula sumando los dos
+                //anteriores, por lo que tendríamos que los términos son 0, 1, 1,
+                //2, 3, 5, 8, 13, 21, 34, 55, 89, 144... El número n se debe
+                //introducir por teclado.
+
+
+                int n;
+                System.out.println("Programa que escribe los n primeros números de la serie de Fibonacci");
+                System.out.print("Por favor, introduzca n: ");
+                n = sc.nextInt();
+
+                switch (n)
+                {
+                    case 1:
+                    {
+                        System.out.print("0");
+                    }
+                    break;
+                    case 2:
+                    {
+                        System.out.print("0 1");
+                    }
+                    break;
+                    default:
+                    {
+                        System.out.print("0 1");
+                        int f1 = 0;
+                        int f2 = 1;
+                        int aux;
+
+                        while(n > 2)
+                        {
+                            aux = f1;
+                            f1 = f2;
+                            f2 = aux + f2;
+                            System.out.print(" " + f2);
+                            n--;
+                        }
+                    }
+                    break;
+                }
+                System.out.println();
             }
             break;
         }

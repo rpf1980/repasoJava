@@ -57,6 +57,7 @@ public class Main
         System.out.println("[40] Calcula la potencia de un entero");
         System.out.println("[41] Suma n + 100, pero no puede ser negativo");
         System.out.println("[42] Enteros entre A y B de 7 en 7");
+        System.out.println("[43] Pirámide");
         System.out.print("Elige una opción: ");
         int opcion = sc.nextInt();
 
@@ -1151,8 +1152,43 @@ public class Main
                 //se debe pedir por teclado. El carácter con el que se pinta la pirámide
                 //también se debe pedir por teclado.
 
-                int alturaPiramide;
-                String caracter = "";
+                int alturaIntroducida;
+                int planta = 1;
+                int longitudDeLinea = 1;
+                int espacio;
+                String relleno = "";
+
+                //Pedimos la altura que desee el usuario para la pirámide
+                System.out.print("Altura: ");
+                alturaIntroducida = sc.nextInt();
+
+                //Pedimos el caracter del relleno de la pirámide
+                System.out.println("Caracter de relleno: ");
+                relleno = sc.next();
+
+                //Damos valor a espacio
+                espacio = alturaIntroducida - 1;
+
+                while(planta <= alturaIntroducida)
+                {
+                    //inserta espacios
+                    for(int i = 1; i <= espacio; i++)
+                    {
+                        System.out.print(" ");
+                    }
+
+                    //inserta línea
+                    for(int i = 1; i <=longitudDeLinea; i++)
+                    {
+                        System.out.print(relleno);
+                    }
+
+                    System.out.println();  //Salto de línea
+
+                    planta++;
+                    espacio--;
+                    longitudDeLinea += 2;
+                }
             }
             break;
 

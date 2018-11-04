@@ -7,6 +7,66 @@ import java.util.Scanner;
 
 public class Main
 {
+
+    static void Nprimos1y1000(int n)
+    {
+        /*int numerosprimos = 0;
+        //boolean primo = false;
+        int divisores = 0;
+        int i;
+
+        for(int n = 2; n < 1000; n++)
+        {
+            i = 1;
+            while(i <= n)
+            {
+                if (n %i == 0)
+                {
+                    divisores = divisores + 1;
+                }
+                i++;
+
+            }
+            if(divisores <= 2)
+            {
+                //primo = true;
+                System.out.println(n + " ");
+            }
+
+        }*/
+
+        int i;
+        boolean esprimo;
+
+
+    }
+
+    public static void EsCapicua(int n)
+    {
+        int i;
+        int aux;
+        int inverso = 0;
+        int cifra;
+
+        //Le damos la vuelta al número
+        aux = n;
+        while(aux != 0)
+        {
+            cifra = aux % 10;
+            inverso = inverso * 10 + cifra;
+            aux = aux / 10;
+        }
+
+        if(n == inverso)
+        {
+            System.out.println("Es capicua");
+        }
+        else
+        {
+            System.out.println("No es capicua");
+        }
+    }
+
     //https://github.com/LuisJoseSanchez/aprende-java-con-ejerciciosjava
     public static void main(String[] args)
     {
@@ -58,6 +118,9 @@ public class Main
         System.out.println("[41] Suma n + 100, pero no puede ser negativo");
         System.out.println("[42] Enteros entre A y B de 7 en 7");
         System.out.println("[43] Pirámide");
+        System.out.println("[44] Función n primos entre 1 y 1000");    //**NO MUESTRA RESULTADOS
+        System.out.println("[45] EsCapicua");
+
         System.out.print("Elige una opción: ");
         int opcion = sc.nextInt();
 
@@ -1189,6 +1252,32 @@ public class Main
                     espacio--;
                     longitudDeLinea += 2;
                 }
+            }
+            break;
+
+            case 44:
+            {
+                //Crea una función que muestre los números primos del 1 al 1000
+
+                /*int limite = 1000;
+                int primos = Nprimos1y1000(limite);
+                System.out.println(primos);*/
+
+
+                //Nprimos1y1000();
+
+            }
+            break;
+
+            case 45:
+            {
+                //Función que comprueba si un número entero es capicua
+
+                int n;
+                System.out.print("Escribe un número: ");
+                n = sc.nextInt();
+
+                EsCapicua(n);
             }
             break;
 

@@ -880,6 +880,39 @@ public class Main
                     }
                 }
 
+                //---------------------------->>>>>>>>>>##################<<<<<<<<<<--------------------------
+
+                /*
+                int claveAcceso = 4444;
+                int n;
+                int intentos = 0;
+                boolean acertado = false;
+
+                //Pedimos clave
+                System.out.print("Introduce clave de acceso: ");
+                n = sc.nextInt();
+
+                if((n/10) != 4)
+                {
+                    System.out.println("El número de clave debe tener 4 cifras");
+                    intentos = intentos + 1;
+                }
+                while(n != claveAcceso || intentos < 4)
+                {
+                    System.out.print("Introduce clave de acceso: ");
+                    n = sc.nextInt();
+                    intentos++;
+
+                    if(intentos > 4)
+                    {
+                        System.out.println("Caja bloqueada." + "\n" + "Agotó los 4 intentos permitidos");
+                    }
+                }
+
+                System.out.println("Clave correcta");
+                System.out.println("Número de intentos = " + intentos);*/
+
+
             }
             break;
 

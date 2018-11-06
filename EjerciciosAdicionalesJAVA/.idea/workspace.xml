@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e7ff0ba4-4783-4520-90ab-36b286db81f9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EjerciciosAdicionalesJAVA/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EjerciciosAdicionalesJAVA/com/company/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -88,24 +87,25 @@
     <session id="586411187">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="8" />
+          <entry key="project.closed" value="9" />
           <entry key="project.open.time.0" value="4" />
+          <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.4" value="3" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="6484" />
-          <entry key="txt" value="146" />
+          <entry key="java" value="6955" />
+          <entry key="txt" value="147" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="6484" />
-          <entry key="PLAIN_TEXT" value="146" />
+          <entry key="JAVA" value="6955" />
+          <entry key="PLAIN_TEXT" value="147" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open" />
@@ -118,8 +118,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-194">
-              <caret line="1256" selection-start-line="1256" selection-end-line="1256" />
+            <state relative-caret-position="442">
+              <caret line="876" column="106" selection-start-line="876" selection-start-column="106" selection-end-line="876" selection-end-column="106" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -145,9 +145,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-11" />
-    <option name="width" value="980" />
-    <option name="height" value="1091" />
+    <option name="x" value="-12" />
+    <option name="width" value="981" />
+    <option name="height" value="1092" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -305,11 +305,18 @@
       <option name="project" value="LOCAL" />
       <updated>1539157658792</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Subiendo ejercicio 45 de pack repasoJava">
+      <created>1541317246730</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1541317246730</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
+    <frame x="-7" y="-7" width="1295" height="735" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.24939272" />
@@ -359,13 +366,14 @@
     <MESSAGE value="Subiendo ejercicio 39 y 40 de pack repasoJava" />
     <MESSAGE value="Subiendo ejercicio 41 y 42 de pack repasoJava" />
     <MESSAGE value="Subiendo ejercicio 43 de pack repasoJava" />
-    <option name="LAST_COMMIT_MESSAGE" value="Subiendo ejercicio 43 de pack repasoJava" />
+    <MESSAGE value="Subiendo ejercicio 45 de pack repasoJava" />
+    <option name="LAST_COMMIT_MESSAGE" value="Subiendo ejercicio 45 de pack repasoJava" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-194">
-          <caret line="1256" selection-start-line="1256" selection-end-line="1256" />
+        <state relative-caret-position="442">
+          <caret line="876" column="106" selection-start-line="876" selection-start-column="106" selection-end-line="876" selection-end-column="106" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -846,39 +846,38 @@ public class Main
                 //“La caja fuerte se ha abierto satisfactoriamente”. Tendremos cuatro
                 //oportunidades para abrir la caja fuerte.
 
-                int combinacion = 4444;
+                int claveAcceso = 4444;
+                int n;
                 int intentos;
-                boolean acertado = false;
-                int n, i;
-                System.out.println("Escriba la combinación de la caja: ");
+
+                //Pedimos número de la clave
+                System.out.print("Escribe clave de acceso: ");
                 n = sc.nextInt();
                 intentos = 1;
 
-                //Pedimos la combinación
-                if (n == combinacion)
+                while(n / 10 != 4)
                 {
-                    acertado = true;
-                } else
-                {
-                    i = 1;
-                    while (i < 4)
-                    {
-                        intentos++;
-                        System.out.println("Combinación incorrecta");
-                        System.out.println("Escriba la combinación de la caja: ");
-                        n = sc.nextInt();
-                        i++;
-                    }
+                    System.out.println("El número de clave debe tener 4 cifras");
+                    System.out.print("Escribe clave de acceso: ");
+                    n = sc.nextInt();
+                    intentos++;
+                    break;
                 }
+                while(n != claveAcceso)
+                {
+                    System.out.print("Escribe clave de acceso: ");
+                    n = sc.nextInt();
+                    intentos++;
 
-                if (acertado)
-                {
-                    System.out.println("La caja fuerte se ha abierto satisfactoriamente");
-                    System.out.println("Números de intentos = " + intentos);
-                } else
-                {
-                    System.out.println("Los siento, esa no es la combinación" + '\n' + "Agotó los 4 intentos");
-                    System.out.println("CAJA FUERTE BLOQUEADA" + '\n' + "¡Llame al servicio técnico!");
+                    if(intentos > 4)
+                    {
+                        System.out.println("Agotó los 4 intentos." + "\n" +
+                                "Caja fuerte bloqueada." + "\n" + "Llame al servicio técnico");
+                    }
+                    else
+                    {
+                        System.out.println("Acceso permitido." + "\n" + "Número de intentos = " + intentos);
+                    }
                 }
 
             }

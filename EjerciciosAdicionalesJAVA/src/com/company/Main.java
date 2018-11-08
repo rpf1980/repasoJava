@@ -836,7 +836,6 @@ public class Main
                 } while (i >= 160);
             }
             break;
-
             case 29:
             {
                 //Realiza el control de acceso a una caja fuerte. La combinación
@@ -846,76 +845,44 @@ public class Main
                 //“La caja fuerte se ha abierto satisfactoriamente”. Tendremos cuatro
                 //oportunidades para abrir la caja fuerte.
 
-                int claveAcceso = 4444;
                 int n;
+                int combinacion = 4444;
                 int intentos;
 
-                //Pedimos número de la clave
-                System.out.print("Escribe clave de acceso: ");
+                //Pedimos primer nº fuera del bucle
+                System.out.print("Escribe combinación de la caja: ");
                 n = sc.nextInt();
                 intentos = 1;
 
-                while(n / 10 != 4)
+                //Condiciones
+                while(n != combinacion && intentos < 4)
                 {
-                    System.out.println("El número de clave debe tener 4 cifras");
-                    System.out.print("Escribe clave de acceso: ");
+                    while(n < 1000 || n > 9999)
+                    {
+                        System.out.println("La combinación debe tener 4 dígitos");
+                        System.out.println("Intentos = " + intentos);
+                        System.out.print("Escribe combinación de la caja: ");
+                        n = sc.nextInt();
+                        intentos++;
+                    }
+
+                    System.out.println("Intentos = " + intentos);
+                    System.out.println("Combinación no válida");
+                    System.out.print("Escribe combinación de la caja: ");
                     n = sc.nextInt();
                     intentos++;
-                    break;
                 }
-                while(n != claveAcceso)
+                if(n == combinacion && intentos < 4)
                 {
-                    System.out.print("Escribe clave de acceso: ");
-                    n = sc.nextInt();
-                    intentos++;
-
-                    if(intentos > 4)
-                    {
-                        System.out.println("Agotó los 4 intentos." + "\n" +
-                                "Caja fuerte bloqueada." + "\n" + "Llame al servicio técnico");
-                    }
-                    else
-                    {
-                        System.out.println("Acceso permitido." + "\n" + "Número de intentos = " + intentos);
-                    }
+                    System.out.println("Combinación válida");
+                    System.out.println("Número de intentos = " + intentos);
                 }
-
-                //---------------------------->>>>>>>>>>##################<<<<<<<<<<--------------------------
-
-                /*
-                int claveAcceso = 4444;
-                int n;
-                int intentos = 0;
-                boolean acertado = false;
-
-                //Pedimos clave
-                System.out.print("Introduce clave de acceso: ");
-                n = sc.nextInt();
-
-                if((n/10) != 4)
+                else
                 {
-                    System.out.println("El número de clave debe tener 4 cifras");
-                    intentos = intentos + 1;
+                    System.out.println("Caja fuerte bloqueada.\nAgotó los 4 intentos.\nLlame al servicio técnico");
                 }
-                while(n != claveAcceso || intentos < 4)
-                {
-                    System.out.print("Introduce clave de acceso: ");
-                    n = sc.nextInt();
-                    intentos++;
-
-                    if(intentos > 4)
-                    {
-                        System.out.println("Caja bloqueada." + "\n" + "Agotó los 4 intentos permitidos");
-                    }
-                }
-
-                System.out.println("Clave correcta");
-                System.out.println("Número de intentos = " + intentos);*/
-
-
             }
             break;
-
             case 30:
             {
                 int i;
